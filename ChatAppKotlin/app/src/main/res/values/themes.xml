@@ -14,4 +14,7 @@
         <!-- Customize your theme here. -->
 
     </style>
+    <style name="PorfileImg" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorButtonNormal">#393333</item>
+    </style>
 </resources>
