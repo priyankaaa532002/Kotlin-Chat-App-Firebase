@@ -50,4 +50,13 @@ dependencies {
 
     //firebase auth
     implementation 'com.google.firebase:firebase-auth-ktx'
+
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    // Storage
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    //circular image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 }

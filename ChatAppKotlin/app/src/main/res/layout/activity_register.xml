@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <EditText
         android:id="@+id/et_username"
@@ -82,10 +82,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_register" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/btn_profileimg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:backgroundTint="@null"
         android:background="@drawable/profilebg"
         android:theme="@style/PorfileImg"
         android:text="Profile\nPhoto"
@@ -96,4 +97,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.735" />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_profileimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="4dp"
+        app:civ_border_color="@color/grad"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_profileimg"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profileimg"
+        app:layout_constraintStart_toStartOf="@+id/btn_profileimg"
+        app:layout_constraintTop_toTopOf="@+id/btn_profileimg" />
 </androidx.constraintlayout.widget.ConstraintLayout>
