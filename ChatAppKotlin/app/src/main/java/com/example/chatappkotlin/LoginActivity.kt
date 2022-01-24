@@ -1,5 +1,6 @@
 package com.example.chatappkotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -20,7 +21,12 @@ class LoginActivity : AppCompatActivity() {
             }
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password)
                 .addOnCompleteListener(this) {
-                    if (it.isSuccessful) Toast.makeText(this,"Successful",Toast.LENGTH_SHORT).show()
+                    if (it.isSuccessful) {
+                        Toast.makeText(this,"Successful",Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, LatestMessagesActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        startActivity(intent)
+                    }
                     else Toast.makeText(this,"Not successful",Toast.LENGTH_SHORT).show()
                 }
         }
