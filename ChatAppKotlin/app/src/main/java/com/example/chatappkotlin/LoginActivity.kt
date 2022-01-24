@@ -24,5 +24,21 @@ class LoginActivity : AppCompatActivity() {
                     else Toast.makeText(this,"Not successful",Toast.LENGTH_SHORT).show()
                 }
         }
+
+        btn_forgotpass.setOnClickListener {
+            val email = et_login_email.text.toString()
+            if (email.isEmpty()){
+                Toast.makeText(this,"Please enter a valid email address",Toast.LENGTH_SHORT).show()
+            }else{
+                FirebaseAuth.getInstance().sendPasswordResetEmail(email)
+                    .addOnCompleteListener {
+                        if(it.isSuccessful){
+                            Toast.makeText(this,"Check your registered email\nto change your password.",Toast.LENGTH_SHORT).show()
+                        }else{
+                            Toast.makeText(this,"${it.exception}",Toast.LENGTH_SHORT).show()
+                        }
+                    }
+            }
+        }
     }
 }
