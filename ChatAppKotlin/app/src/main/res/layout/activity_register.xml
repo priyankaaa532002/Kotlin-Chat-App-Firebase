@@ -56,7 +56,7 @@
 
     <TextView
         android:id="@+id/btn_register"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="30dp"
         android:background="@drawable/buttonbg"
@@ -74,8 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Already have an account? LOGIN HERE!"
-        android:textColor="@color/white"
+        android:text="Already have an account?"
+        android:textColor="#8F8F88"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
