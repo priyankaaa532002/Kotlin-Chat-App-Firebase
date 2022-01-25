@@ -14,6 +14,7 @@ class LatestMessagesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_latest_messages)
 
         supportActionBar?.title = "Galaxy Chat"
+
         verifyUserIsLoggedIn()
 
     }
