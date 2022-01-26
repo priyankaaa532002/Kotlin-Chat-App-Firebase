@@ -12,22 +12,36 @@ class ChatLogActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_log)
 
-        supportActionBar?.title = "Chat Log"
+
+        //val username = intent.getStringExtra(NewMessagesActivity.USER_KEY)
+        val user = intent.getParcelableExtra<User>(NewMessagesActivity.USER_KEY)
+        supportActionBar?.title = user?.username
 
         val adapter = GroupAdapter<ViewHolder>()
-        adapter.add(ChatItem())
-        adapter.add(ChatItem())
+        adapter.add(ChatToItem())
+        adapter.add(ChatFromItem())
         rv_chat_log.adapter = adapter
     }
 }
 
-class ChatItem : Item<ViewHolder>(){
+class ChatFromItem : Item<ViewHolder>(){
     override fun bind(viewHolder: ViewHolder, position: Int) {
 
     }
 
     override fun getLayout(): Int {
         return R.layout.from_row
+    }
+
+}
+
+class ChatToItem : Item<ViewHolder>(){
+    override fun bind(viewHolder: ViewHolder, position: Int) {
+
+    }
+
+    override fun getLayout(): Int {
+        return R.layout.to_row
     }
 
 }
