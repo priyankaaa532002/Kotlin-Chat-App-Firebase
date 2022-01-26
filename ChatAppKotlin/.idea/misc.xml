@@ -9,11 +9,13 @@
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.10104166666666667" />
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/drawable/profilebg.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/layout/activity_chat_log.xml" value="0.2359375" />
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/layout/activity_latest_messages.xml" value="0.2359375" />
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/layout/activity_login.xml" value="0.176" />
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/layout/activity_new_messages.xml" value="0.2359375" />
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/layout/activity_register.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/layout/from_row.xml" value="0.4" />
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/layout/user_row_new_messages.xml" value="0.2926829268292683" />
         <entry key="..\:/Users/priya/Desktop/GITHUB/Kotlin-Chat-App-Firebase/ChatAppKotlin/app/src/main/res/menu/nav_menu.xml" value="0.1" />
       </map>

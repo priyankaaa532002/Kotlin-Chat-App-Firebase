@@ -1,5 +1,6 @@
 package com.example.chatappkotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -47,6 +48,12 @@ class NewMessagesActivity : AppCompatActivity() {
                     if (user!=null){
                         adapter.add(UserItem(user))
                     }
+                }
+                //select item
+                adapter.setOnItemClickListener { item, view ->
+                    val intent = Intent(view.context,ChatLogActivity::class.java)
+                    startActivity(intent)
+                    finish()
                 }
                 rv_new_messages.adapter = adapter
 
